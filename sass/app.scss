@@ -1,4 +1,15 @@
 body{
+    background-color: #24292e;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header"
+                        "juego"
+                        "footer";
+    justify-content: center;
+    .header{
 .panel{
     display: inline-block;
     width: 150px;
