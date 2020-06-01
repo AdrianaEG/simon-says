@@ -1,0 +1,48 @@
+body{
+.panel{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.botton-right-panel{
+    border-bottom-right-radius: 150px;
+    background-color: red;
+}
+
+.botton-right-panel:hover{
+    border-bottom: solid 3px white;
+    border-right: solid 3px white;
+}
+
+.botton-left-panel{
+    border-bottom-left-radius: 150px;
+    background-color: blue;
+}
+
+.botton-left-panel:hover{
+    border-bottom: solid 3px white;
+    border-left: solid 1px white;
+}
+
+.top-right-panel{
+    border-top-right-radius: 150px;
+    background-color: green;
+}
+
+.top-right-panel:hover{
+    border-top: solid 1px white;
+    border-right: solid 3px white;
+}
+
+.top-left-panel{
+    border-top-left-radius: 150px;
+    background-color: yellow;
+}
+
+.top-left-panel:hover{
+   border-left: solid 1px white;
+   border-top: solid 1px white;
+}
+
+
