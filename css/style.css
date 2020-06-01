@@ -44,7 +44,7 @@ body {
 
 .botton-right-panel {
   border-bottom-right-radius: 150px;
-  background-color: red;
+  background-color: #FFF9A3;
 }
 
 .botton-right-panel:hover {
@@ -54,7 +54,7 @@ body {
 
 .botton-left-panel {
   border-bottom-left-radius: 150px;
-  background-color: blue;
+  background-color: #C9FF85;
 }
 
 .botton-left-panel:hover {
@@ -64,7 +64,7 @@ body {
 
 .top-right-panel {
   border-top-right-radius: 150px;
-  background-color: green;
+  background-color: #8DE7F5;
 }
 
 .top-right-panel:hover {
@@ -74,12 +74,16 @@ body {
 
 .top-left-panel {
   border-top-left-radius: 150px;
-  background-color: yellow;
+  background-color: #FEBCB9;
 }
 
 .top-left-panel:hover {
   border-left: solid 1px white;
   border-top: solid 1px white;
+}
+
+.audios {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
