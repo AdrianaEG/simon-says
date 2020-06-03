@@ -1,27 +1,46 @@
 const $botonComenzar = document.querySelector('#btn-comenzar');
 let juegoComputadora;
 let $turno = document.querySelector('.turno');
-/*$botonComenzar.onclick = function(e){
-    e.preventDefault();
-    console.log("click");
-}*/
 
 function ejecutarJuego(){
+    bloquearUsuario();
     juegoComputadora = [];
     jugarComputadora();
-    jugarUsuario();
+    $turno.textContent = "Jugando computadora...";
+}
+
+function bloquearUsuario(){
+    document.querySelectorAll('.panel').forEach(function($miPanel){
+        $miPanel.onclick = function(){};
+    });
+}
+
+function desbloquearUsuario(){
+    document.querySelectorAll('.panel').forEach(function($miPanel){
+        $miPanel.onclick = jugarUsuario;
+    });
 }
 
 function jugarComputadora(){
-    $turno.textContent = "Jugando computadora...";
     let numeroPanel = obtenerNumeroAleatorio();
     juegoComputadora.push(`opcion-${numeroPanel}`);
     console.log('La jugada de la compu es ' + juegoComputadora);
     marcarTablero(juegoComputadora);
+    cambiarMensaje("Jugando computadora...");
+    setTimeout(function(){
+        desbloquearUsuario()
+   }, 1300);
 }
 
-function jugarUsuario(){
-    
+
+function cambiarMensaje(mensaje){
+    setTimeout(function(){
+        $turno.textContent = mensaje;
+    }, 1300);
+}
+
+function jugarUsuario(e){
+    console.log(e.target);
 }
 
 function marcarTablero(juego){
