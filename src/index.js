@@ -73,6 +73,7 @@ function cambiarMensaje(mensaje){
 function bloquearUsuario(){
     document.querySelectorAll('.panel').forEach(function($miPanel){
         $miPanel.onclick = function(){};
+        $miPanel.style.cursor = 'none';
     });
 }
 
@@ -83,6 +84,7 @@ function desbloquearUsuario(){
     cantidadDeClicksUsuario=0;
     document.querySelectorAll('.panel').forEach(function($miPanel){
         $miPanel.onclick = jugarUsuario;
+        $miPanel.style.cursor = 'pointer';
     });
 }
 
