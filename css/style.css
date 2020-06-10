@@ -52,6 +52,7 @@ body {
 }
 .contenedor .container div div {
   outline: none;
+  user-select: none;
 }
 
 .panel {
