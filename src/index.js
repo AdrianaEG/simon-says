@@ -105,7 +105,7 @@ function jugarUsuario(e){
     }
 
     if(perdioUsuario(todosLosPanelesClickeados, juegoComputadora)){
-        cambiarMensaje('Perdiste, pulsá comenzar para empezar de nuevo');
+        cambiarMensaje(`Perdiste con ${ronda-1} puntos, pulsá comenzar para empezar de nuevo`);
         bloquearUsuario();
     };
 }
