@@ -54,6 +54,9 @@ body {
   outline: none;
   user-select: none;
 }
+.contenedor .container div div:focus {
+  outline: none;
+}
 
 .panel {
   display: inline-block;
