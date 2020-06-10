@@ -53,9 +53,6 @@ body {
 .contenedor .container div div {
   -webkit-tap-highlight-color: transparent;
 }
-.contenedor .container div div:focus {
-  outline: none;
-}
 
 .panel {
   display: inline-block;
