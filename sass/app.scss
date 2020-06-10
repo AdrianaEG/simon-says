@@ -1,11 +1,13 @@
 body{
     background-color: #24292e;
+    font-family: 'Offside', cursive;
 }
 
 .contenedor{
     display: grid;
+    grid-template-columns: 315px;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header"
+    grid-template-areas:"header"
                         "juego"
                         "footer";
     justify-content: center;
@@ -23,13 +25,16 @@ body{
                justify-content: center;
             }
             #btn-comenzar{
-                width: 25%;
+                font-family: 'Offside', cursive;
+                outline: none;
+                background: linear-gradient(to right, #fda656, white);
+                width: 40%;
                 margin: 0 auto;
-                background-color: red;
+                //background-color: red;
                 border: none;
-                height: 30px;
-                color: wheat;
-                border-radius: 8%;
+                height: 40px;
+                color: black;
+                border-radius: 40px;
                 cursor: pointer;
             }
             .turno{
@@ -37,6 +42,7 @@ body{
                 grid-area: mostradorDeTurno;
                 justify-content: center;
                 color: white;
+                text-align: center;
             }              
     }
 
@@ -48,6 +54,11 @@ body{
         height: 308px;
         display: grid;
         grid-area: juego;
+        div{
+            div{
+                outline: none;
+            }
+        }
     }
 
 }
