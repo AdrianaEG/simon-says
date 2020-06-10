@@ -51,8 +51,7 @@ body {
   grid-area: juego;
 }
 .contenedor .container div div {
-  outline: none;
-  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .contenedor .container div div:focus {
   outline: none;
@@ -70,37 +69,21 @@ body {
   background-color: #FFF9A3;
 }
 
-/*.botton-right-panel:hover{
-    border-bottom: solid 3px white;
-    border-right: solid 3px white;
-}*/
 .botton-left-panel {
   border-bottom-left-radius: 150px;
   background-color: #C9FF85;
 }
 
-/*.botton-left-panel:hover{
-    border-bottom: solid 3px white;
-    border-left: solid 1px white;
-}*/
 .top-right-panel {
   border-top-right-radius: 150px;
   background-color: #8DE7F5;
 }
 
-/*.top-right-panel:hover{
-    border-top: solid 1px white;
-    border-right: solid 3px white;
-}*/
 .top-left-panel {
   border-top-left-radius: 150px;
   background-color: #FEBCB9;
 }
 
-/*.top-left-panel:hover{
-   border-left: solid 1px white;
-   border-top: solid 1px white;
-}*/
 .audios {
   display: none;
 }

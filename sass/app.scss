@@ -56,8 +56,7 @@ body{
         grid-area: juego;
         div{
             div{
-                outline: none;
-                user-select: none;
+                -webkit-tap-highlight-color: transparent;
             }
             div:focus{
                 outline: none;
@@ -79,40 +78,20 @@ body{
     background-color: #FFF9A3;//#FFE110
 }
 
-/*.botton-right-panel:hover{
-    border-bottom: solid 3px white;
-    border-right: solid 3px white;
-}*/
-
 .botton-left-panel{
     border-bottom-left-radius: 150px;
     background-color: #C9FF85;//#20FF8C
 }
-
-/*.botton-left-panel:hover{
-    border-bottom: solid 3px white;
-    border-left: solid 1px white;
-}*/
 
 .top-right-panel{
     border-top-right-radius: 150px;
     background-color: #8DE7F5;//#049DD9
 }
 
-/*.top-right-panel:hover{
-    border-top: solid 1px white;
-    border-right: solid 3px white;
-}*/
-
 .top-left-panel{
     border-top-left-radius: 150px;
     background-color: #FEBCB9;//F2388F
 }
-
-/*.top-left-panel:hover{
-   border-left: solid 1px white;
-   border-top: solid 1px white;
-}*/
 
 .audios{
     display: none;
