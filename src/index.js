@@ -93,8 +93,8 @@ function jugarUsuario(e){
     cantidadDeClicksUsuario++;
     let panelClickeado = e.target;
     panelClickeado = panelClickeado.classList[2];
-    arrayDePanelesClickeados.push(panelClickeado);
-    todosLosPanelesClickeados.push(panelClickeado);
+    arrayDePanelesClickeados.push(panelClickeado);//contiene sólo el último
+    todosLosPanelesClickeados.push(panelClickeado);//contiene todos
     marcarTablero(arrayDePanelesClickeados);
     if(!perdioUsuario(todosLosPanelesClickeados, juegoComputadora) && (cantidadDeClicksUsuario == ronda)){
         bloquearUsuario();
