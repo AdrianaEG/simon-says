@@ -2,7 +2,10 @@
 Juego de memoria, prestá mucha atención a las notas musicales y las luces de colores para repetir la secuencia. 
 En cada ronda la dificultad es mayor. 
 
-# Construido con :hammer_and_pick:
+### DEMO :video_game:
+adrianaeg.github.io/simon-says/
+
+### Construido con :hammer_and_pick:
 * HTML5
 * SCSS
 * Javascript
